@@ -16,7 +16,6 @@ public class test1 {
         ExecutorService executorService = Executors.newCachedThreadPool();
         final Semaphore semaphore = new Semaphore(totalThread);
         final CountDownLatch countDownLatch = new CountDownLatch(totalRequest);
-
         for(int i = 0;i < totalRequest;i++ ){
             executorService.execute(
 //                    () -> {
